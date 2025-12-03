@@ -1,0 +1,56 @@
+===========================================
+QUICK EMAILJS SETUP GUIDE
+===========================================
+
+STEP 1: Create .env file
+-------------------------
+Create a file named ".env" in the portfolio-ps5 folder (same folder as package.json)
+
+STEP 2: Add these lines to .env file
+-------------------------------------
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id_here
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id_here
+REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key_here
+
+STEP 3: Get your EmailJS credentials
+--------------------------------------
+1. Go to https://www.emailjs.com/
+2. Sign up for a FREE account (200 emails/month free)
+3. In Dashboard → Email Services → Add New Service
+   - Choose Gmail (or your email provider)
+   - Connect your email: dtanish2580@gmail.com
+   - Copy the SERVICE ID
+4. In Dashboard → Email Templates → Create New Template
+   - Use these variables: {{from_name}}, {{from_email}}, {{subject}}, {{message}}
+   - Set "To Email" to: dtanish2580@gmail.com
+   - Copy the TEMPLATE ID
+5. In Dashboard → Account → General → API Keys
+   - Copy your PUBLIC KEY
+
+STEP 4: Update .env file
+-------------------------
+Replace the placeholder values with your actual credentials:
+REACT_APP_EMAILJS_SERVICE_ID=service_abc123
+REACT_APP_EMAILJS_TEMPLATE_ID=template_xyz789
+REACT_APP_EMAILJS_PUBLIC_KEY=abcdefghijklmnop
+
+STEP 5: Restart your development server
+----------------------------------------
+Stop your current server (Ctrl+C) and run:
+npm start
+
+STEP 6: Test the form
+---------------------
+Fill out the contact form and submit. You should receive an email!
+
+===========================================
+TROUBLESHOOTING
+===========================================
+- Make sure .env file is in the root folder (portfolio-ps5)
+- Make sure there are NO spaces around the = sign
+- Make sure you restarted the server after creating .env
+- Check browser console (F12) for detailed error messages
+- Verify your EmailJS service is active in the dashboard
+
+For detailed instructions, see: EMAILJS_SETUP.md
+
