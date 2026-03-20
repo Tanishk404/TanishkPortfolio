@@ -11,7 +11,7 @@ export const useTheme = () => {
 }
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(() => {
+  const [theme] = useState(() => {
     // Get theme from localStorage or default to 'dark'
     const savedTheme = localStorage.getItem('portfolio-theme')
     return savedTheme || 'dark'
