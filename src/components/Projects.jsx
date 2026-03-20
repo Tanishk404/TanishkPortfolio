@@ -5,6 +5,7 @@ import Netflix from '../images/NetFlix.png'
 import AirBnbImage from '../images/AirBnb.png'
 import SundownImage from '../images/Sundown.png'
 import PortfolioImage from '../images/Portfolio.png'
+import CatGbt from "../images/CatGbt.png"
 
 const Projects = () => {
   const projects = [
@@ -14,32 +15,42 @@ const Projects = () => {
       description: 'Full-stack Airbnb-style platform with listings, auth, and hosting tools.',
       tech: ['EJS', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Mapbox', 'Cloudinary', 'Passport'],
       image: AirBnbImage,
-      github: 'https://github.com/Tanishk405/AirBnb-Clone/tree/main',
+      github: 'https://github.com/Tanishk404/AirBnb-Clone/tree/main',
       demo: 'https://air-bnb-clone-syac.vercel.app/',
     
     },
     {
       id: 2,
-      title: 'Interactive Web Dashboard',
-      description: 'A modern web dashboard website with HTML, CSS, and JavaScript animations.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      image: SundownImage,
-      github: 'https://github.com/Tanishk405/Sundown',
-      demo: 'https://sundown-swart.vercel.app/',
+      title: 'CatGbt',
+      description: 'Full-stack AI chatbot with authentication, real-time messaging',
+      tech: ['React (Vite)', 'NodeJs', 'ExpressJs', 'MongoDb', 'Axios', 'Jwt', 'Cloudinary'],
+      image: CatGbt,
+      github: 'https://github.com/Tanishk404',
+      demo: 'https://cat-gbt-xhx7.vercel.app/',
    
     },
     {
       id: 3,
+      title: 'Interactive Web Dashboard',
+      description: 'A modern web dashboard website with HTML, CSS, and JavaScript animations.',
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      image: SundownImage,
+      github: 'https://github.com/Tanishk404/Sundown',
+      demo: 'https://sundown-swart.vercel.app/',
+   
+    },
+    {
+      id: 4,
       title: 'Netflix Clone',
-      description: 'Netflix clone for watching movies and tv shows trailers',
+      description: 'Fullstack netflix clone for watching movies and tv shows trailers',
       tech: ['React Js', 'Vite', 'Bootstrap CSS', 'Axios', 'Firebase'],
       image: Netflix,
-      github: '#',
+      github: 'https://github.com/Tanishk404',
       demo: 'https://gorgeous-salmiakki-ad1dab.netlify.app/',
      
     },
     {
-      id: 4,
+      id: 5,
       title: 'Portfolio Website',
       description: 'Responsive portfolio with theme toggle, motion, and EmailJS contact.',
       tech: ['React', 'Framer Motion', 'Tailwind CSS'],

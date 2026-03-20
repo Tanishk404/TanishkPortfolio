@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import { ThemeProvider } from './context/ThemeContext'
-import LoadingScreen from './components/LoadingScreen'
+
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import Home from './components/Home'
@@ -41,9 +41,7 @@ function App() {
     <ThemeProvider>
       <div className="ps5-app">
         <AnimatePresence mode="wait">
-          {isLoading ? (
-            <LoadingScreen key="loading" onComplete={() => setIsLoading(false)} />
-          ) : (
+ 
             <>
               <Navigation key="nav" />
               <main className="page-content">
@@ -51,7 +49,7 @@ function App() {
               </main>
               <Footer />
             </>
-          )}
+          
         </AnimatePresence>
       </div>
     </ThemeProvider>
