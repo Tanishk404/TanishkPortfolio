@@ -27,15 +27,6 @@ function AppRoutes() {
 
 function App() {
   // Check if we should show loading screen (on initial load or theme change)
-  const [isLoading, setIsLoading] = useState(() => {
-    // Show loading screen if flag is set or on first load
-    const showLoading = localStorage.getItem('show-loading') === 'true'
-    if (showLoading) {
-      // Remove the flag after reading it
-      localStorage.removeItem('show-loading')
-    }
-    return showLoading || true // Always show on first mount
-  })
 
   return (
     <ThemeProvider>
