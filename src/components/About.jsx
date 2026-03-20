@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Mail, MapPin, Clock, Download, MessageCircle, Code, Database, Layers, FileCode, Wrench } from 'lucide-react'
+import { Mail, MapPin, Clock, Download, MessageCircle, Code, Database, Layers, Wrench } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import img from '../images/Pf.png'
 import resumePDF from '../images/Tanishk_Rajput_Resume.pdf'
